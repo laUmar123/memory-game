@@ -1,0 +1,31 @@
+@font-face {
+    font-family: CloisterBlack;
+    src: url('../assets/CloisterBlack.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'CloisterBlack', Arial, Helvetica, sans-serif;
+}
+
+.body-class {
+    height: 100vh;
+    width: 100vw;
+}
+
+#root {
+    background-image: url("../public/background2.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 200px calc(100% - 230px) 30px;
+    position: relative;
+}
+
+.hide {
+    transform: scale(0%);
+}
