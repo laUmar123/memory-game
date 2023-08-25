@@ -1,0 +1,31 @@
+header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20rem;
+    transition: transform 200ms ease-in-out;
+}
+
+header>img {
+    width: 300px;
+    cursor: pointer;
+    transition: transform 150ms ease-in-out;
+}
+
+header>img:hover {
+    transform: scale(120%);
+}
+
+.scoreboard {
+    padding: 1rem 2rem;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: linear-gradient(#3b6466, #b6d9f4);
+    height: 100px;
+    width: 300px;
+    border-radius: 20px;
+    box-shadow: rgba(255, 255, 255, 0.473) 0px 54px 55px, rgba(255, 255, 255, 0.507) 0px -12px 30px, rgba(255, 255, 255, 0.507) 0px 4px 6px, rgba(255, 255, 255, 0.562) 0px 12px 13px, rgba(255, 255, 255, 0.5) 0px -3px 5px;
+}
