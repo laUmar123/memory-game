@@ -1,0 +1,139 @@
+.card {
+    width: 220px;
+    height: 320px;
+    display: grid;
+    grid-template-rows: 70% 30%;
+    justify-items: center;
+    text-align: center;
+    background-image: url('../public/grainy-card-background.avif');
+    border-radius: 25px;
+    font-size: 24px;
+    padding: 10px 10px;
+    align-items: center;
+    transition: 1s box-shadow;
+    position: relative;
+    cursor: pointer;
+}
+
+.card>img {
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+}
+
+.card:hover {
+    box-shadow: 0 5px 35px 0px rgba(0, 0, 0, .1);
+    transform: scale(105%);
+}
+
+.card:hover::before,
+.card:hover::after {
+    display: block;
+    content: '';
+    position: absolute;
+    width: 220px;
+    height: 320px;
+    background: #FDA8CF;
+    border-radius: 25px;
+    z-index: -1;
+    animation: 1s clockwise infinite;
+}
+
+.card:hover:after {
+    background: #F3CE5E;
+    animation: 2s counterclockwise infinite;
+}
+
+@keyframes clockwise {
+    0% {
+        top: -5px;
+        left: 0;
+    }
+
+    12% {
+        top: -2px;
+        left: 2px;
+    }
+
+    25% {
+        top: 0;
+        left: 5px;
+    }
+
+    37% {
+        top: 2px;
+        left: 2px;
+    }
+
+    50% {
+        top: 5px;
+        left: 0;
+    }
+
+    62% {
+        top: 2px;
+        left: -2px;
+    }
+
+    75% {
+        top: 0;
+        left: -5px;
+    }
+
+    87% {
+        top: -2px;
+        left: -2px;
+    }
+
+    100% {
+        top: -5px;
+        left: 0;
+    }
+}
+
+@keyframes counterclockwise {
+    0% {
+        top: -5px;
+        right: 0;
+    }
+
+    12% {
+        top: -2px;
+        right: 2px;
+    }
+
+    25% {
+        top: 0;
+        right: 5px;
+    }
+
+    37% {
+        top: 2px;
+        right: 2px;
+    }
+
+    50% {
+        top: 5px;
+        right: 0;
+    }
+
+    62% {
+        top: 2px;
+        right: -2px;
+    }
+
+    75% {
+        top: 0;
+        right: -5px;
+    }
+
+    87% {
+        top: -2px;
+        right: -2px;
+    }
+
+    100% {
+        top: -5px;
+        right: 0;
+    }
+}
