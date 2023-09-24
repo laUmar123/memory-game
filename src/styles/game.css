@@ -1,0 +1,15 @@
+main {
+    grid-row-start: 2;
+    grid-column-start: 1;
+    width: 100%;
+    padding: 0 100px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    column-gap: 2rem;
+    row-gap: 2rem;
+    align-self: center;
+    align-items: center;
+    justify-items: center;
+    height: fit-content;
+    justify-self: center;
+}
